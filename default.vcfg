@@ -17,4 +17,8 @@
 
 [[logging]]
   config = ["Name=http", "Host=35.201.9.144", "Port=3080", "Format=json"]
-  type = "programs"
+  type = "system"
+
+[[logging]]
+  config = ["Name=http", "Host=35.201.9.144", "Port=3080", "Format=json"]
+  type = "kernel"
