@@ -1,0 +1,15 @@
+{
+	"applications": {
+		"helloworld": {
+			"type": "external",
+			"working_directory": "/www/helloworld",
+			"executable": "bin/helloworld",
+			"arguments": ["--colour=#FFFFFF"]
+		}
+	},
+	"listeners": {
+		"*:8888": {
+			"pass": "applications/helloworld"
+		}
+	}
+}
