@@ -8,7 +8,7 @@
 		}
 	},
 	"listeners": {
-		"*:8888": {
+		"*:80": {
 			"pass": "applications/helloworld"
 		}
 	}
