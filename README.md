@@ -29,12 +29,12 @@ $ cat change-colour.json
 	},
 
 	"listeners": {
-		"*:8888": {
+		"*:80": {
 			"pass": "applications/helloworld"
 		}
 	}
 }
 
-$ curl -X PUT --data-binary @change-colour.json http://localhost:8080/config
+$ curl -X PUT --data-binary @change-colour.json http://<ip-address>:8080/config
 
 ```
