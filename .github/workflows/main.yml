@@ -1,0 +1,19 @@
+name: execute the Ansible playbooks
+on: push
+
+jobs:
+  build:
+    name: Build
+    runs-on: self-hosted
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+
+      - name: run playbook
+        shell: bash
+        run: |
+          cd /home/ubuntu/playbook
+           ansible-playbook gcp-playbook.yml &
+           ansible-playbook vmw-playbook.yml &
+           ansible-playbook aws-playbook.yml
