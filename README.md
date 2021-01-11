@@ -22,7 +22,15 @@ $ cat change-colour.json
 			"type": "external",
 			"working_directory": "/www/helloworld",
 			"executable": "bin/helloworld",
-			"arguments": ["--colour=#000000"]
+			"arguments": [
+				"--colour=#FF0000"
+			]
+		}
+	},
+
+	"listeners": {
+		"*:8888": {
+			"pass": "applications/helloworld"
 		}
 	}
 }
