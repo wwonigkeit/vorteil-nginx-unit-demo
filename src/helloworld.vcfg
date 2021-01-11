@@ -1,0 +1,14 @@
+[[program]]
+  binary = "/helloworld"
+  args = "--colour #229954"
+
+[[network]]
+  tcp = ["8888","8300","8080"]
+
+[system]
+  hostname = "nginx-unit"
+  user = "root"
+
+[vm]
+  ram = "256 MiB"
+  disk-size = "+50 MiB"
