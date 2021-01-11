@@ -1,0 +1,6 @@
+ignore = [".vorteilproject"]
+
+[[target]]
+  name = "default"
+  vcfgs = ["default.vcfg"]
+  icon = "nginx.png"

@@ -1,0 +1,8 @@
+70fc84d0d4df269eb04a1a81ccac9a7a  lib/systemd/system/unit.service
+ebdda4903a256376738af4b9b5d7fef3  usr/sbin/unitd
+bef45b7e7476d9600b661a9e1b4f183e  usr/sbin/unitd-debug
+217aad194d6b3ab7988e7ead9227062e  usr/share/doc/unit/README
+2ee1e10f93f7b402278747b3b14406e1  usr/share/doc/unit/changelog.Debian.gz
+3531c8a8dd0a0d9b4fc1a2ec58b71d62  usr/share/doc/unit/changelog.gz
+de2d69fa4cb8955edb4b493928d2217f  usr/share/doc/unit/copyright
+8dacda655d61b2879486dfe074e276b9  usr/share/doc/unit/examples/example.config
