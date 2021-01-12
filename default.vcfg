@@ -1,11 +1,11 @@
 [[program]]
-  args = "/usr/local/bin/docker-entrypoint.sh unitd --control 0.0.0.0:8080"
+  args = "/usr/local/bin/docker-entrypoint.sh unitd-debug --control 0.0.0.0:8080"
   env = ["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "UNIT_VERSION=1.21.0-1~buster"]
   logfiles = ["/var/log/unit.log"]
   privilege = "superuser"
 
 [[network]]
-  tcp = ["80","8300","8080","8888"]
+  tcp = ["80","8080"]
 
 [system]
   hostname = "nginx-unit"
@@ -22,3 +22,7 @@
 [[logging]]
   config = ["Name=http", "Host=35.201.9.144", "Port=3080", "Format=json"]
   type = "kernel"
+
+[[logging]]
+  config = ["Name=http", "Host=35.201.9.144", "Port=3080", "Format=json"]
+  type = "programs"
